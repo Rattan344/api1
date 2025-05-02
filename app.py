@@ -5,7 +5,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Load the dataset (adjust path if needed)
-quotes_df = pd.read_csv("./archive/quotes.csv")  # Ensure the file is in the same directory
+quotes_df = pd.read_csv("quotes_trimmed.csv")  # Ensure the file is in the same directory
 
 @app.route('/quote', methods=['GET'])
 # It give only , random and category quote.No author
